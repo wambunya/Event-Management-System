@@ -1,0 +1,116 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form styles */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Events page styles */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.event-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.event-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.event-card p {
+    color: #555;
+}
+
+button.btn-details, button.btn-edit, button.btn-delete {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+button.btn-details {
+    background-color: #28a745;
+}
+
+button.btn-details:hover {
+    background-color: #218838;
+}
+
+button.btn-edit {
+    background-color: #ffc107;
+}
+
+button.btn-edit:hover {
+    background-color: #e0a800;
+}
+
+button.btn-delete {
+    background-color: #dc3545;
+}
+
+button.btn-delete:hover {
+    background-color: #c82333;
+}

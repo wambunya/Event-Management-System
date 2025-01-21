@@ -1,0 +1,126 @@
+<!-- Add Event Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <link rel="stylesheet" href="eventHandling.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-calendar-plus"></i> Add Event</h1>
+        <form id="add-event-form">
+            <label for="title">Event Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="date">Event Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Event Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="Conference">Conference</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Seminar">Seminar</option>
+                <option value="Networking">Networking</option>
+                <option value="Hackathon">Hackathon</option>
+                <option value="Social">Social</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="max-attendees">Max Attendees:</label>
+            <input type="number" id="max-attendees" name="max-attendees" min="0" required>
+
+            <button type="submit">Add Event</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- Edit Event Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Event</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-edit"></i> Edit Event</h1>
+        <form id="edit-event-form">
+            <label for="title">Event Title:</label>
+            <input type="text" id="title" name="title" value="Sample Event" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required>Sample description...</textarea>
+
+            <label for="date">Event Date:</label>
+            <input type="date" id="date" name="date" value="2025-05-20" required>
+
+            <label for="time">Event Time:</label>
+            <input type="time" id="time" name="time" value="14:00" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" value="Sample Location" required>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="Conference">Conference</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Seminar" selected>Seminar</option>
+                <option value="Networking">Networking</option>
+                <option value="Hackathon">Hackathon</option>
+                <option value="Social">Social</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="max-attendees">Max Attendees:</label>
+            <input type="number" id="max-attendees" name="max-attendees" value="300" required>
+
+            <button type="submit">Update Event</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- View Events Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-calendar-alt"></i> Events</h1>
+        <div class="events-grid">
+            <div class="event-card">
+                <img src="https://example.com/event1.jpg" alt="Event Image">
+                <h2>Annual Tech Conference</h2>
+                <p><strong>Date:</strong> 2025-03-15</p>
+                <p><strong>Location:</strong> Grand Hall, Tech City</p>
+                <button class="btn-details">View Details</button>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+            </div>
+            <!-- Repeat similar cards for other events -->
+        </div>
+    </div>
+</body>
+</html>
